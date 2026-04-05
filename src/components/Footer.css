@@ -1,0 +1,61 @@
+.footer-container {
+  background-color: var(--primary-orange);
+  padding: 40px 0;
+  margin-top: auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-text-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text-footer h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2e7d32;
+  line-height: 1;
+}
+
+.logo-text-footer h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111; /* Dark orange/brown? Logo text in footer seems to be green and dark blue/black. */
+  line-height: 1;
+  margin-left: 20px;
+}
+
+.logo-text-footer span {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+}
+
+/* Fix logo color specifically for footer if needed */
+.logo-icon-footer svg path:nth-child(2) {
+  stroke: #1d4d20; /* darker green to contrast orange */
+}
+
+/* SOCIAL ICONS */
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}

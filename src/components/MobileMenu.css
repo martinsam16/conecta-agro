@@ -1,0 +1,119 @@
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  display: flex;
+}
+
+.mobile-menu-panel {
+  width: 85vw;
+  max-width: 400px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 15px rgba(0,0,0,0.15);
+  animation: slideInLeft 0.3s ease-out;
+  overflow-y: auto;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 20px;
+}
+
+.mobile-menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-menu-logo-icon svg {
+  width: 60px;
+  height: 60px;
+}
+
+.mobile-menu-logo-text h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  line-height: 1;
+}
+
+.mobile-menu-logo-text h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #2e7d32;
+  line-height: 1.1;
+}
+
+.mobile-menu-logo-text span {
+  font-size: 10px;
+  color: #777;
+  font-style: italic;
+  display: block;
+  margin-top: 4px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 4px;
+}
+
+.mobile-menu-close {
+  cursor: pointer;
+  margin-top: 12px;
+  color: #000;
+  transition: transform 0.2s;
+}
+
+.mobile-menu-close:hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.mobile-menu-item {
+  width: 100%;
+  max-width: 450px;
+  background-color: #e9e9eb;
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.mobile-menu-item:hover {
+  background-color: #d1d1d6;
+}
+
+.mobile-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+}

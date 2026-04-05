@@ -1,0 +1,182 @@
+[
+  {
+    "id": "d280f46b-7f4e-419c-8e13-0456266dd3a3",
+    "title": "Uvas frescas",
+    "imgUrl": "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+    "price": "1.5",
+    "stockStatus": "DISPONIBLE",
+    "quantity": "2 TN",
+    "producer": "Fundo Santa Ana",
+    "location": "Cañete",
+    "category": "Frutas",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "2 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "f057979e-6f19-41b2-acad-a044841b94bd",
+    "title": "Mandarina",
+    "imgUrl": "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+    "price": "1.8",
+    "stockStatus": "EN STOCK",
+    "quantity": "A CONSULTAR",
+    "producer": "Agricola San José",
+    "location": "Huaral",
+    "category": "Verduras",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "5 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "d5fdc661-5f24-46be-a828-679654f23957",
+    "title": "Fresas",
+    "imgUrl": "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+    "price": "2.5",
+    "stockStatus": "EN STOCK",
+    "quantity": "A CONSULTAR",
+    "producer": "Valle Verde SAC",
+    "location": "Cañete",
+    "category": "Tuberculos",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "6 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "862f0232-ea29-4c56-a823-dcb674eed8f4",
+    "title": "Uvas frescas premium",
+    "imgUrl": "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+    "price": "1.6",
+    "stockStatus": "DISPONIBLE",
+    "quantity": "1.5 TN",
+    "producer": "Fundo Esperanza",
+    "location": "Ica",
+    "category": "Frutas",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "14 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "c1a2abb7-a3f4-42ed-9324-6f63f9d6769b",
+    "title": "Mandarina sin pepa",
+    "imgUrl": "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+    "price": "2.0",
+    "stockStatus": "EN STOCK",
+    "quantity": "A CONSULTAR",
+    "producer": "Sol de Lima",
+    "location": "Huaral",
+    "category": "Verduras",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "12 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "625f1d0c-52c8-40c3-82fb-db21c10f8f4d",
+    "title": "Fresas orgánicas",
+    "imgUrl": "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+    "price": "3.0",
+    "stockStatus": "DISPONIBLE",
+    "quantity": "500 Kg",
+    "producer": "EcoAndes",
+    "location": "Arequipa",
+    "category": "Tuberculos",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "13 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "58e1fa0b-041e-43a5-b333-d1dd0feae8f7",
+    "title": "Uvas de vino",
+    "imgUrl": "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+    "price": "1.2",
+    "stockStatus": "DISPONIBLE",
+    "quantity": "3 TN",
+    "producer": "Viña del Sur",
+    "location": "Ica",
+    "category": "Frutas",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "8 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "e84c1615-74d3-4d36-98dc-66c70f628c32",
+    "title": "Mandarina clementina",
+    "imgUrl": "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+    "price": "2.2",
+    "stockStatus": "EN STOCK",
+    "quantity": "A CONSULTAR",
+    "producer": "Cosecha Dorada",
+    "location": "Chincha",
+    "category": "Verduras",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "10 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  },
+  {
+    "id": "30c0aab2-34a8-4897-afa1-ecbd9947fc0b",
+    "title": "Fresas congeladas",
+    "imgUrl": "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+    "price": "2.8",
+    "stockStatus": "EN STOCK",
+    "quantity": "A CONSULTAR",
+    "producer": "FrioSur",
+    "location": "Tacna",
+    "category": "Tuberculos",
+    "subtitle": "del Valle, excelente calidad de exportación",
+    "years": "7 años",
+    "currency": "S/",
+    "images": [
+      "https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+    ]
+  }
+]

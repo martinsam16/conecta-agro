@@ -1,0 +1,78 @@
+:root {
+  --primary-yellow: #f8e698;
+  --primary-orange: #f3821f;
+  --bg-light: #fbe697;
+  --bg-white: #ffffff;
+  --text-dark: #222222;
+  --text-gray: #666666;
+  --border-color: #dddddd;
+  --green-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, #a4d271 40%, #5cb85c 100%);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light); /* The main background color for the header area */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Reusable Components */
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: white;
+  box-shadow: 0 2px 4px rgba(243, 130, 31, 0.4);
+}
+
+.btn-orange:hover {
+  background-color: #d67119;
+  transform: translateY(-1px);
+}
