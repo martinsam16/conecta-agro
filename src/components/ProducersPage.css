@@ -1,0 +1,165 @@
+.producers-page-container {
+  background-color: #ffefa3; /* more consistent yellow */
+  min-height: calc(100vh - 120px);
+  padding: 40px 0;
+}
+
+.producers-page-container .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.producer-card {
+  background-color: #eadabd; /* light beige */
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.producer-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #333;
+}
+
+.producer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.producer-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.producer-icon {
+  flex-shrink: 0;
+}
+
+.producer-card-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.producer-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.producer-action-btn {
+  background-color: #f7931e; /* orange */
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(247, 147, 30, 0.2);
+}
+
+.producer-action-btn:hover {
+  background-color: #e08318;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(247, 147, 30, 0.3);
+}
+
+.producer-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.producer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.carousel-btn.left { left: -15px; }
+.carousel-btn.right { right: -15px; }
+
+/* The carousel buttons in the image actually overflow the image boundary or sit outside it. */
+/* We'll wrap the image to allow buttons to sit outside. */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .producers-page-container {
+    padding: 20px;
+  }
+  .producer-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .producer-card-right {
+    align-items: center;
+  }
+  .producer-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .carousel-wrapper {
+    margin-right: 0;
+  }
+}

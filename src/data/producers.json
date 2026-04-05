@@ -1,0 +1,53 @@
+[
+  {
+    "id": "p001",
+    "name": "VALLE VERDE",
+    "type": "Fundo",
+    "location": "Lima, Cañete",
+    "mainProducts": "uvas, fresas.",
+    "isVerified": true,
+    "isActive": true,
+    "responseTime": "< 2 h",
+    "rating": 4.5,
+    "opinionsCount": 13,
+    "images": [
+      "https://images.unsplash.com/photo-1595841696417-a16debc2f7e0?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1582215160867-0c7f7f32d398?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1498837167922-41c66f53ca83?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "p002",
+    "name": "LOS ANDES",
+    "type": "Asociación",
+    "location": "Junín, Tarma",
+    "mainProducts": "papas, zanahorias.",
+    "isVerified": true,
+    "isActive": true,
+    "responseTime": "< 1 h",
+    "rating": 4.8,
+    "opinionsCount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1582215160867-0c7f7f32d398?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1498837167922-41c66f53ca83?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1595841696417-a16debc2f7e0?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "p003",
+    "name": "EL SOL",
+    "type": "Cooperativa",
+    "location": "Piura, Chulucanas",
+    "mainProducts": "mangos, limones.",
+    "isVerified": true,
+    "isActive": true,
+    "responseTime": "< 4 h",
+    "rating": 4.2,
+    "opinionsCount": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1498837167922-41c66f53ca83?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1595841696417-a16debc2f7e0?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1582215160867-0c7f7f32d398?auto=format&fit=crop&w=600&q=80"
+    ]
+  }
+]

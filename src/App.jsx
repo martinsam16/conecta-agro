@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 import HomePage from './components/HomePage';
 import CategoryPage from './components/CategoryPage';
+import ProducersPage from './components/ProducersPage';
 import './App.css';
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
     setIsMobileMenuOpen(false);
     if (page === 'Inicio') navigate('/');
     else if (page === 'Categorías') navigate('/categorias');
+    else if (page === 'Productores') navigate('/productores');
+    else if (page === 'Contacta') {
+      navigate('/#contact-section');
+    }
     else navigate('/en-construccion');
   };
 
@@ -36,6 +41,7 @@ function App() {
           <Route path="/" element={<HomePage onSelectProduct={(cat) => navigate(`/categorias/${cat.toLowerCase()}`)} />} />
           <Route path="/categorias" element={<CategoryPage onSelectProductItem={(item) => navigate(`/producto/${item.id}`)} />} />
           <Route path="/categorias/:categoryName" element={<CategoryPage onSelectProductItem={(item) => navigate(`/producto/${item.id}`)} />} />
+          <Route path="/productores" element={<ProducersPage />} />
           <Route path="/producto/:productId" element={
             <div className="white-background-wrapper">
               <div className="content-wrapper">

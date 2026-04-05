@@ -12,8 +12,8 @@
 .recommendations-carousel {
   display: flex;
   align-items: center;
-  gap: 20px;
   position: relative;
+  /* Allow buttons to overlap edges */
 }
 
 .cards-container {
@@ -21,30 +21,82 @@
   gap: 30px;
   overflow-x: hidden;
   flex: 1;
-  justify-content: center;
-  padding: 10px 0;
+  padding: 20px 5px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .carousel-btn {
-  background-color: #e5e5e5;
+  position: absolute;
+  top: 48%; /* Slight adjustment for visual center with gradient cards */
+  transform: translateY(-50%);
+  background-color: white;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #333;
   flex-shrink: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border: 1px solid #f0f0f0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
+
+.carousel-btn:hover {
+  background-color: #fcfcfc;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  color: #111;
+}
+
+.carousel-btn.prev {
+  left: -22px;
+}
+
+.carousel-btn.next {
+  right: -22px;
+}
+
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none; /* Mobile users prefer touch swipe */
+  }
+  
+  .cards-container {
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 15px;
+    margin: 0 -15px; /* Full width bleed */
+  }
+  
+  .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .recommendation-card {
+    width: 220px;
+  }
+}
+
 
 .recommendation-card {
   width: 250px;
+  flex-shrink: 0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .card-image {

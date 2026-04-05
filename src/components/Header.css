@@ -146,3 +146,59 @@
   color: #666;
   font-size: 0.75rem;
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px 0;
+    gap: 10px;
+  }
+  
+  .header-left {
+    gap: 8px;
+  }
+
+  .logo-text h2, .logo-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .logo-text h3 {
+    margin-left: 5px;
+  }
+
+  .logo-text span {
+    display: none;
+  }
+
+  .header-search {
+    margin: 0 5px;
+  }
+
+  .search-bar {
+    padding: 2px 12px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .menu-btn {
+    padding-left: 0;
+  }
+
+  .user-btn {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-text h2, .logo-text h3 {
+    font-size: 1rem;
+  }
+}
+

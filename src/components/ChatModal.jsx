@@ -5,7 +5,7 @@ import './ChatModal.css';
 
 const WS_URL = 'wss://echo.websocket.org';
 
-const ChatModal = ({ isOpen, onClose }) => {
+const ChatModal = ({ isOpen, onClose, producerName, productImage, productName, quantity, subtotal }) => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [isConnected, setIsConnected] = useState(false);
@@ -125,13 +125,16 @@ const ChatModal = ({ isOpen, onClose }) => {
     <div className="chat-modal-overlay">
       <div className="chat-modal-container">
         
-        {/* LEFT PANE - MAIN CHAT */}
+        {/* MAIN CHAT PANE */}
         <div className="chat-main-pane">
           <div className="chat-header">
             <div className="brand-logo-container">
-               <div className="brand-placeholder">V</div>
-               <h2 className="brand-title">Valle verde SAC</h2>
+               <div className="brand-placeholder">{producerName ? producerName.charAt(0).toUpperCase() : 'V'}</div>
+               <h2 className="brand-title">{producerName || "Valle verde SAC"}</h2>
                {!isConnected && <span style={{fontSize:'12px', color:'red', marginLeft:'10px'}}>(Desconectado)</span>}
+            </div>
+            <div className="close-btn" onClick={onClose}>
+               <X size={24} />
             </div>
           </div>
 
@@ -147,8 +150,11 @@ const ChatModal = ({ isOpen, onClose }) => {
 
           <div className="chat-composer-area">
              <div className="product-snippet">
-                <img src="https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=100&q=80" alt="Uvas" className="snippet-img" />
-                <div className="snippet-text">Ped. Minimo: 100 kg</div>
+                {productImage && <img src={productImage} alt="Producto" className="snippet-img" />}
+                <div className="snippet-text">
+                   <div className="snippet-product-name">{productName || "Consulta directa con el productor"}</div>
+                   <div className="snippet-product-meta">Cant: {quantity} • Subtotal: S/ {subtotal}</div>
+                </div>
              </div>
              
              <div className="composer-toolbar">
@@ -164,7 +170,7 @@ const ChatModal = ({ isOpen, onClose }) => {
                 <Maximize2 size={16} className="expand-icon" />
                 <textarea 
                   className="composer-textarea" 
-                  placeholder="Ingresa tu mensaje aquí"
+                  placeholder="Escribe tu duda sobre el producto aquí"
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -173,28 +179,6 @@ const ChatModal = ({ isOpen, onClose }) => {
                    <button className="send-btn" onClick={handleSendMessage} disabled={!inputText.trim()}>Enviar</button>
                 </div>
              </div>
-          </div>
-        </div>
-
-        {/* RIGHT PANE - SIDEBAR */}
-        <div className="chat-sidebar-pane">
-          <div className="sidebar-header">
-             <div className="sidebar-title-container">
-                <MessageSquare size={24} />
-                <span>Mensajes</span>
-             </div>
-             <div className="sidebar-actions">
-                <Search size={20} />
-                <X size={20} onClick={onClose} />
-             </div>
-          </div>
-          
-          <div className="chat-list">
-             <div className="chat-list-item active">
-                <div className="brand-placeholder" style={{width:'30px', height:'30px', fontSize:'14px'}}>V</div>
-                <span className="chat-list-name">Valle verde SAC</span>
-             </div>
-             {/* Additional mock chats could go here */}
           </div>
         </div>
 

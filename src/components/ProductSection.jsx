@@ -53,11 +53,11 @@ const ProductSection = () => {
   return (
     <div className="product-section">
       <div className="product-details-container">
-        
+
         <h1 className="product-title">
           {title} <span className="product-subtitle">{subtitle}</span>
         </h1>
-        
+
         <div className="product-farmer-info">
           <span>{producer}</span>
           <span className="dot">•</span>
@@ -74,7 +74,7 @@ const ProductSection = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="main-image-container">
             <button className="gallery-nav-btn left" onClick={handlePrevImage}>
               <ChevronLeft size={24} />
@@ -93,18 +93,18 @@ const ProductSection = () => {
             <div className="text-sm">Precio</div>
             <div className="price-value">{currency} {price}</div>
           </div>
-          
+
           <div className="divider"></div>
-          
+
           <div className="quantity-section">
-             <div className="text-sm">Cantidad</div>
-             <div className="quantity-selector">
-                <button className="qty-btn" onClick={decreaseQuantity}>-</button>
-                <div className="qty-value">{quantity}</div>
-                <button className="qty-btn" onClick={increaseQuantity}>+</button>
-             </div>
+            <div className="text-sm">Cantidad</div>
+            <div className="quantity-selector">
+              <button className="qty-btn" onClick={decreaseQuantity}>-</button>
+              <div className="qty-value">{quantity}</div>
+              <button className="qty-btn" onClick={increaseQuantity}>+</button>
+            </div>
           </div>
-          
+
           <div className="divider"></div>
 
           <div className="shipping-section">
@@ -117,25 +117,33 @@ const ProductSection = () => {
           <div className="divider"></div>
 
           <div className="totals-section">
-             <div className="totals-row">
-               <span>Subtotal del producto</span>
-               <span>{currency} {(price * quantity).toFixed(2)}</span>
-             </div>
-             <div className="totals-row">
-               <span>Total del envío</span>
-               <span>S/ 0.00</span>
-             </div>
+            <div className="totals-row">
+              <span>Subtotal del producto</span>
+              <span>{currency} {(price * quantity).toFixed(2)}</span>
+            </div>
+            <div className="totals-row">
+              <span>Total del envío</span>
+              <span>S/ 0.00</span>
+            </div>
           </div>
 
           <div className="action-buttons">
-             <button className="btn btn-orange">COTIZAR</button>
-             <button className="btn btn-orange" onClick={() => setIsChatOpen(true)}>CHATEA AHORA</button>
+            <button className="btn btn-orange">COTIZAR</button>
+            <button className="btn btn-orange" onClick={() => setIsChatOpen(true)}>CHATEA AHORA</button>
           </div>
 
         </div>
       </div>
-      
-      <ChatModal isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+
+      <ChatModal
+        isOpen={isChatOpen}
+        onClose={() => setIsChatOpen(false)}
+        producerName={productData.producer}
+        productImage={productData.images[0]}
+        productName={productData.title}
+        quantity={quantity}
+        subtotal={(productData.price * quantity).toFixed(2)}
+      />
     </div>
   );
 };

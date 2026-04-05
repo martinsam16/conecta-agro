@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Frutas",
+    "slug": "frutas",
+    "icon": "🍎"
+  },
+  {
+    "id": "cat-2",
+    "name": "Verduras",
+    "slug": "verduras",
+    "icon": "🥦"
+  },
+  {
+    "id": "cat-3",
+    "name": "Tubérculos",
+    "slug": "tuberculos",
+    "icon": "🥔"
+  }
+]

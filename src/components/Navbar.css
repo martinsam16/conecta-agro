@@ -16,6 +16,8 @@
   cursor: pointer;
   padding-bottom: 8px;
   position: relative;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .nav-item.active::after, .nav-item:hover::after {
@@ -34,4 +36,10 @@
 
 .nav-item:not(.active):hover {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: none;
+  }
 }
