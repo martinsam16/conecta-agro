@@ -178,6 +178,32 @@
   transform: translateX(2px);
 }
 
+.reset-filters-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 2px solid #ed1c24; /* a nice red for reset/clear */
+  color: #ed1c24;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reset-filters-btn:hover {
+  background-color: #ed1c24;
+  color: white;
+  box-shadow: 0 4px 12px rgba(237, 28, 36, 0.2);
+  transform: translateY(-2px);
+}
+
+.reset-filters-btn:active {
+  transform: translateY(0);
+}
+
 
 /* CARDS */
 .category-item-card {

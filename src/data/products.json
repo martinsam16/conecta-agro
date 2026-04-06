@@ -1,8 +1,8 @@
 [
   {
     "id": "d280f46b-7f4e-419c-8e13-0456266dd3a3",
-    "title": "Uvas frescas",
-    "imgUrl": "https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=300&q=80",
+    "title": "Fresas frescas",
+    "imgUrl": "https://images.unsplash.com/photo-1623010424571-c1c8d09b475c?auto=format&fit=crop&w=300&q=80",
     "price": "1.5",
     "stockStatus": "DISPONIBLE",
     "quantity": "2 TN",
@@ -13,10 +13,9 @@
     "years": "2 años",
     "currency": "S/",
     "images": [
-      "https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=300&q=80",
-      "https://images.unsplash.com/photo-1543528176-61b8f04439eb?auto=format&fit=crop&w=300&q=80",
-      "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=300&q=80",
-      "https://images.unsplash.com/photo-1506807803488-8eafc15316c1?auto=format&fit=crop&w=300&q=80"
+      "https://images.unsplash.com/photo-1587815073078-f636169821e3?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1623010424571-c1c8d09b475c?auto=format&fit=crop&w=300&q=80",
+      "https://images.unsplash.com/photo-1557616284-98bd90729b50?auto=format&fit=crop&w=300&q=80"
     ]
   },
   {
@@ -68,7 +67,7 @@
     "quantity": "A CONSULTAR",
     "producer": "Valle Verde SAC",
     "location": "Cañete",
-    "category": "Tuberculos",
+    "category": "Frutas",
     "subtitle": "del Valle, excelente calidad de exportación",
     "years": "6 años",
     "currency": "S/",
@@ -128,7 +127,7 @@
     "quantity": "500 Kg",
     "producer": "EcoAndes",
     "location": "Arequipa",
-    "category": "Tuberculos",
+    "category": "Frutas",
     "subtitle": "del Valle, excelente calidad de exportación",
     "years": "13 años",
     "currency": "S/",
@@ -188,7 +187,7 @@
     "quantity": "A CONSULTAR",
     "producer": "FrioSur",
     "location": "Tacna",
-    "category": "Tuberculos",
+    "category": "Frutas",
     "subtitle": "del Valle, excelente calidad de exportación",
     "years": "7 años",
     "currency": "S/",

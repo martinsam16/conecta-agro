@@ -67,6 +67,17 @@ const CategoryPage = ({ onSelectProductItem }) => {
       });
    };
 
+   const handleResetFilters = () => {
+      setPriceFilter({ min: null, max: null });
+      setMinInput('');
+      setMaxInput('');
+      setSelectedProducer('todos los productores');
+      setSortOrder('relevancia');
+      if (categoryName || searchQuery) {
+         navigate('/categorias');
+      }
+   };
+
    const handleRangeClick = (min, max) => {
       setPriceFilter({ min, max });
       setMinInput(min || '');
@@ -181,6 +192,10 @@ const CategoryPage = ({ onSelectProductItem }) => {
             <div className="sidebar-filter-group">
                <h3 className="sidebar-filter-title">Ubicación</h3>
             </div>
+
+            <button className="reset-filters-btn" onClick={handleResetFilters}>
+               Reiniciar Filtros
+            </button>
          </div>
 
          {/* MAIN CONTENT */}

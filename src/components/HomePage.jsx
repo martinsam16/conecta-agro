@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Heart, Users, Target, Globe } from 'lucide-react';
+import { Heart, Users, Target, Earth } from 'lucide-react';
 import './HomePage.css';
 
 const HomePage = ({ onSelectProduct }) => {
@@ -72,7 +72,7 @@ const HomePage = ({ onSelectProduct }) => {
             mediante información clara y actualizada sobre precios, cantidades disponibles y estacionalidad.
           </p>
         </div>
-        
+
         <div className="hero-subcards-wrapper">
           <div className="hero-subcard">
             <h3>CONTACTO DIRECTO</h3>
@@ -104,7 +104,7 @@ const HomePage = ({ onSelectProduct }) => {
           <span>about COMMUNITIES</span>
         </div>
         <div className="value-item">
-          <div className="value-icon-circle"><Globe size={34} fill="white" /></div>
+          <div className="value-icon-circle"><Earth size={34} /></div>
           <span>about the PLANET</span>
         </div>
       </section>
@@ -112,7 +112,7 @@ const HomePage = ({ onSelectProduct }) => {
       {/* CATEGORIES SECTION */}
       <section className="categories-section">
         <div className="category-card" onClick={() => onSelectProduct('Frutas')}>
-          <img src="https://images.unsplash.com/photo-1596368708356-6e1e1025ee72?auto=format&fit=crop&w=500&q=80" alt="Frutas" />
+          <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=500&q=80" alt="Frutas" />
           <h3>Frutas</h3>
         </div>
         <div className="category-card" onClick={() => onSelectProduct('Verduras')}>
@@ -120,7 +120,7 @@ const HomePage = ({ onSelectProduct }) => {
           <h3>Verduras</h3>
         </div>
         <div className="category-card" onClick={() => onSelectProduct('Tuberculos')}>
-          <img src="https://images.unsplash.com/photo-1518977676366-2287dc37da18?auto=format&fit=crop&w=500&q=80" alt="Tubérculos" />
+          <img src="https://images.unsplash.com/photo-1617130094141-532436117aa1?auto=format&fit=crop&w=500&q=80" alt="Tubérculos" />
           <h3>Tuberculos</h3>
         </div>
       </section>
@@ -128,12 +128,12 @@ const HomePage = ({ onSelectProduct }) => {
       {/* CONTACT SECTION */}
       <section className="contact-section" id="contact-section">
         <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=300&q=80" alt="Asparagus" className="contact-veggie left" />
-        <img src="https://images.unsplash.com/photo-1506802913710-18ebad2936e7?auto=format&fit=crop&w=300&q=80" alt="Chili" className="contact-veggie right" />
-        
+        <img src="https://images.unsplash.com/photo-1701294878194-2aa42434e9af?auto=format&fit=crop&w=300&q=80" alt="Chili" className="contact-veggie right" />
+
         <div className="contact-card">
           <h2>CONTACTANOS</h2>
           <p>Escribenos y nos pondremos en contacto a la brevedad</p>
-          
+
           {isSubmitted && (
             <div style={{ backgroundColor: '#d4edda', color: '#155724', padding: '10px', borderRadius: '5px', marginBottom: '15px', width: '100%', textAlign: 'center' }}>
               ¡Mensaje enviado con éxito!
@@ -145,7 +145,7 @@ const HomePage = ({ onSelectProduct }) => {
               <input type="text" name="name" value={formData.name} onChange={handleChange} className={`contact-input ${errors.name ? 'error' : ''}`} placeholder="Nombres y apellidos" />
               {errors.name && <span style={{ color: '#d9534f', fontSize: '0.85rem', marginTop: '-10px', marginBottom: '10px', textAlign: 'left', paddingLeft: '15px' }}>{errors.name}</span>}
             </div>
-            
+
             <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
               <input type="email" name="email" value={formData.email} onChange={handleChange} className={`contact-input ${errors.email ? 'error' : ''}`} placeholder="Correo" />
               {errors.email && <span style={{ color: '#d9534f', fontSize: '0.85rem', marginTop: '-10px', marginBottom: '10px', textAlign: 'left', paddingLeft: '15px' }}>{errors.email}</span>}
